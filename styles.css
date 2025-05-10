@@ -8,7 +8,19 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
 }
-
+.box-container{
+    padding:20px;
+    border: 5px solid #ff6702;
+    border-radius:15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width:800px;
+    margin: auto;
+}
 .container {
     display: flex;
     flex-direction: column; /* Sắp xếp theo chiều dọc */
@@ -24,8 +36,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 20px rgb(255, 0, 0);
-    animation: glow 3s infinite linear;
+    box-shadow: 0 0 20px rgb(45, 21, 179);
+    animation:glow 7s infinite linear;
 }
 .glow-circle img {
     width: 100%;
@@ -34,11 +46,12 @@ body {
 }
 
 @keyframes glow {
-    0% { box-shadow: 0 0 20px rgb(255, 0, 0); }
-    25% { box-shadow: 0 0 20px rgb(0, 255, 0); }
-    50% { box-shadow: 0 0 20px rgb(0, 0, 255); }
-    75% { box-shadow: 0 0 20px rgb(255, 255, 0); }
-    100% { box-shadow: 0 0 20px rgb(255, 0, 0); }
+    0% { box-shadow: 0 0 20px rgb(228, 98, 12); }
+    20% { box-shadow: 0 0 20px rgb(212, 20, 100); }
+    40% { box-shadow: 0 0 20px rgb(170, 22, 184); }
+    60% { box-shadow: 0 0 20px rgb(255, 255, 0); }
+    80% { box-shadow: 0 0 20px rgb(0, 60, 255); }
+    100% { box-shadow: 0 0 20px rgb(0, 170, 212); }
 }
 
 .title {
