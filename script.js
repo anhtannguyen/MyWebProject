@@ -1,7 +1,7 @@
-function openProject(url) {
-    window.location.href = url;
-}
-//bấm vào link và nhảy sang trang web hiện tại//
+// function openProject(url) {
+//     window.location.href = url;
+// }
+// //bấm vào link và nhảy sang trang web hiện tại//
 function openProject(url) {
     window.open(url, '_blank');
 }
