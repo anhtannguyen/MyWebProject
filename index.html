@@ -2,44 +2,37 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khởi Đầu Mới</title>
-    <!--<link rel="icon" type="image/png" href="https://www.vecteezy.com/free-vector/anime">-->
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="box-container">
-        <div class="container">
-            <h1 class="title">NGUYỄN ANH TẤN</h1> <!-- Đưa tiêu đề lên trước -->
-            <div class="glow-circle">
-                <a href="https://www.facebook.com/nguyenanhtanD/"><img src="./mSi0YYC - Imgur.jpg" alt="Ảnh glow circle"></a>
-            </div> <!-- Glow Circle xuống dưới -->
-            <div class="projects">
-                <div class="project" onclick="openProject('https://anhtannguyen.github.io/BangGiaYenSao2025/')">Dự án 1 </div>
-                <div class="project" onclick="openProject('duan2.html')">Dự án 2 - Box Card</div>
-                <div class="project" onclick="openProject('duan3.html')">Dự án 3 </div>
+    <div class="container">
+        <h1 class="title">NGUYỄN ANH TẤN</h1>
+
+        <div class="profile">
+            <div class="avatar">
+                <a href="https://www.facebook.com/nguyenanhtanD/">
+                    <img src="./mSi0YYC - Imgur.jpg" alt="Ảnh đại diện">
+                </a>
             </div>
+        </div>
+
+        <div class="projects">
+            <button onclick="openProject('https://anhtannguyen.github.io/BangGiaYenSao2025/')">Dự án 1</button>
+            <button onclick="openProject('duan2.html')">Dự án 2 - Box Card</button>
+            <button onclick="openProject('duan3.html')">Dự án 3</button>
         </div>
     </div>
+
     <footer>
-        <div class="footer-container">
-            <div class="social-links">
-                <a onclick="openProject('https://facebook.com/nguyenanhtanD')" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Facebook-new.png/640px-Facebook-new.png" alt="facebook" width="50">
-                </a>
-                <a onclick="openProject('https://zalo.me/0869964712')" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Zalo_icon.svg/640px-Zalo_icon.svg.png" alt="Zalo" width="50">
-                </a>
-                <a onclick="openProject('tel:0869964712')">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/VK_icons_phone_add_circle_fill_blue_56.svg/640px-VK_icons_phone_add_circle_fill_blue_56.svg.png" alt="Phone" width="50">
-                </a>
-                <a onclick="openProject('https://www.youtube.com/channel/UCElXAHf-s2fOmQbuRS7Y78Q')" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/WLA_icon_youtube.svg/640px-WLA_icon_youtube.svg.png" alt="YouTube" width="50">
-                </a>             
-            </div>
+        <div class="social-links">
+            <a href="https://facebook.com/nguyenanhtanD" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://zalo.me/0869964712" target="_blank"><i class="fab fa-zalo"></i></a>
+            <a href="tel:0869964712"><i class="fas fa-phone"></i></a>
+            <a href="https://www.youtube.com/channel/UCElXAHf-s2fOmQbuRS7Y78Q" target="_blank"><i class="fab fa-youtube"></i></a>
         </div>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
