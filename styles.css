@@ -141,25 +141,4 @@ i {
     filter: brightness(1.2);
     transform: scale(1.1);
 }
-@media (max-width: 768px) {
-    footer {
-        padding: 10px 15px;
-        position: relative; /* Đảm bảo không bị chồng lên nội dung */
-    }
-
-    .footer-container {
-        flex-direction: column; /* Sắp xếp theo chiều dọc */
-        gap: 10px;
-    }
-
-    .social-links {
-        flex-direction: row; /* Giữ nguyên bố cục icon */
-        gap: 10px;
-    }
-
-    .social-links a {
-        font-size: 20px; /* Giảm kích thước icon trên màn hình nhỏ */
-    }
-}
-
 /*footer*/
