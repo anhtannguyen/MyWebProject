@@ -1,4 +1,4 @@
-*{
+    *{
     margin:0;
     padding:0;  
 }
@@ -100,40 +100,38 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
+    padding: 15px 20px; /* Giảm padding để phù hợp với màn hình nhỏ */
     width: 100%;
+    position: relative; /* Tránh bị chồng lên nội dung */
+    bottom: 0;
 }
 
 .footer-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap; /* Hỗ trợ màn hình nhỏ */
     align-items: center;
     justify-content: center;
+    gap: 15px; /* Khoảng cách giữa các icon */
 }
 
 .social-links {
     display: flex;
-    gap: 30px;
-    /* margin-bottom: 10px; */
-    justify-content: center; /* Căn giữa theo chiều ngang */
+    gap: 20px;
+    justify-content: center;
     align-items: center;
-    /* width: 40px;
-    /* filter: grayscale(100%); */
-    transition: 0.3s ease-in-out      
 }
 
 .social-links a {
+    font-size: 24px;
     color: white;
-    font-size: 28px;
-    transition: 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 .social-links a:hover {
-    color: #ff6702;
+    color: var(--accent-color);
     transform: scale(1.2);
 }
+
 i {
     font-size: 28px;
     color: white;
@@ -143,4 +141,25 @@ i {
     filter: brightness(1.2);
     transform: scale(1.1);
 }
+@media (max-width: 768px) {
+    footer {
+        padding: 10px 15px;
+        position: relative; /* Đảm bảo không bị chồng lên nội dung */
+    }
+
+    .footer-container {
+        flex-direction: column; /* Sắp xếp theo chiều dọc */
+        gap: 10px;
+    }
+
+    .social-links {
+        flex-direction: row; /* Giữ nguyên bố cục icon */
+        gap: 10px;
+    }
+
+    .social-links a {
+        font-size: 20px; /* Giảm kích thước icon trên màn hình nhỏ */
+    }
+}
+
 /*footer*/
